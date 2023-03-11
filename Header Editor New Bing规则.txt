@@ -3,7 +3,7 @@
 	"sendHeader": [
 		{
 			"enable": true,
-			"name": "New Bing",
+			"name": "Bing",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://.*\\.bing\\.com/.*",
@@ -13,6 +13,20 @@
 			"action": {
 				"name": "x-forwarded-for",
 				"value": "8.8.8.8"
+			}
+		},
+		{
+			"enable": false,
+			"name": "Edge Ua",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://.*\\.bing\\.com/.*",
+			"exclude": "如果你使用其他浏览器而不是Edge 可打开此规则",
+			"group": "必应",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69"
 			}
 		}
 	],
