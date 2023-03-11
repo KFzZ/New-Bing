@@ -1,0 +1,21 @@
+{
+	"request": [],
+	"sendHeader": [
+		{
+			"enable": true,
+			"name": "New Bing",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://.*\\.bing\\.com/.*",
+			"exclude": "",
+			"group": "必应",
+			"isFunction": false,
+			"action": {
+				"name": "x-forwarded-for",
+				"value": "8.8.8.8"
+			}
+		}
+	],
+	"receiveHeader": [],
+	"receiveBody": []
+}
