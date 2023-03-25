@@ -2,8 +2,8 @@
 	"request": [],
 	"sendHeader": [
 		{
-			"enable": true,
-			"name": "Bing",
+			"enable": false,
+			"name": "Bing(重定向已和谐)",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://.*\\.bing\\.com/.*",
